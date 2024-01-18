@@ -32,18 +32,26 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: scale(1.05);
         }
 
         .news-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #333; /* Title color */
+            color: #333;
         }
 
         .news-content {
             font-size: 14px;
-            color: #666; /* Content color */
+            color: #666;
+            margin-top: 10px; /* Tambahkan margin top untuk memberi jarak dengan gambar */
         }
 
         .news-image {
@@ -52,6 +60,11 @@
             width: 250px;
             border-radius: 8px;
             margin-top: 10px;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover .news-image {
+            transform: scale(1.2);
         }
 
         header {
@@ -60,9 +73,8 @@
             font-display: flex;
             text-align: center;
             color: #4422EE;
-            
         }
-        
+
         .news-title {
             font-size: 20px;
         }
@@ -73,23 +85,23 @@
     <section>
         <header class="section-header">
             <p>Berita Seputar Kegiatan Masjid As-Suruur</p>
-          </header>
+        </header>
         <div class="news-container">
             <div class="news-card">
                 <div class="news-title">Renovasi Masjid As-Suruur</div>
-                <img class="news-image" src="images/masjid1.jpg" alt="Renovasi Masjid">
+                <img class="news-image" src="masjid.jpg" alt="Renovasi Masjid">                
                 <div class="news-content">Kami dengan senang hati mengumumkan bahwa proses renovasi Masjid As-Suruur telah selesai. Semoga masjid ini menjadi tempat ibadah yang nyaman dan indah bagi seluruh jamaah.</div>
             </div>
 
             <div class="news-card">
                 <div class="news-title">Acara Tausiyah Rutin</div>
-                <img class="news-image" src="images/ngaji.jpg" alt="Acara Tausiyah">
+                <img class="news-image" src="ngaji.jpg" alt="Acara Tausiyah"> 
                 <div class="news-content">Setiap Jumat malam, kita mengadakan acara tausiyah bersama untuk mempererat ukhuwah dan meningkatkan pemahaman keagamaan. Semua jamaah diundang untuk hadir.</div>
             </div>
 
             <div class="news-card">
                 <div class="news-title">Program Donasi Untuk Anak Yatim</div>
-                <img class="news-image" src="images/anak yatim.jpg" alt="Program Donasi">
+                <img class="news-image" src="anak yatim.jpg" alt="Program Donasi">
                 <div class="news-content">Masjid As-Suruur mengadakan program donasi untuk mendukung anak-anak Yatim kurang mampu di sekitar masjid. Ayo bergabung dan berkontribusi untuk masa depan mereka.</div>
             </div>
         </div>
